@@ -1,24 +1,5 @@
 # nathan-louie.github.io
 
-## Project setup
-```
-yarn install
-```
+My personal website.
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
-
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Currently down for maintenance, come back later!
