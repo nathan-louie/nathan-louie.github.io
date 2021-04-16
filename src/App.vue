@@ -1,32 +1,48 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+  <div id="app" :class="this.$route.name.bodyClass">
+    <Header :routeName="this.$route.name" :viewport="viewport" />
+    <router-view :viewport="viewport" />
+    <Footer />
   </div>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script>
+import "@/styles/App.scss";
+import Header from "@/components/Header.vue";
+import Footer from "@/components/Footer.vue";
 
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
-</style>
+export default {
+  name: "App",
+  data() {
+    return {
+      viewport: {
+        w: window.innerWidth,
+        h: window.innerHeight,
+        is568: window.innerWidth <= 568,
+        is768: window.innerWidth <= 768,
+        is1024: window.innerWidth <= 1024,
+      },
+    };
+  },
+  created() {
+    this.updateViewport();
+    window.addEventListener("resize", this.updateViewport);
+    window.addEventListener("beforeunload", () => window.scroll(0, 0));
+  },
+  methods: {
+    updateViewport() {
+      this.viewport = {
+        w: window.innerWidth,
+        h: window.innerHeight,
+        is568: window.innerWidth <= 568,
+        is768: window.innerWidth <= 768,
+        is1024: window.innerWidth <= 1024,
+      };
+    },
+  },
+  components: {
+    Header,
+    Footer,
+  },
+};
+</script>
