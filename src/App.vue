@@ -2,14 +2,12 @@
   <div id="app" :class="this.$route.name.bodyClass">
     <Header :routeName="this.$route.name" :viewport="viewport" />
     <router-view :viewport="viewport" />
-    <Footer />
   </div>
 </template>
 
 <script>
 import "@/styles/App.scss";
 import Header from "@/components/Header.vue";
-import Footer from "@/components/Footer.vue";
 
 export default {
   name: "App",
@@ -27,7 +25,6 @@ export default {
   created() {
     this.updateViewport();
     window.addEventListener("resize", this.updateViewport);
-    window.addEventListener("beforeunload", () => window.scroll(0, 0));
   },
   methods: {
     updateViewport() {
@@ -42,7 +39,6 @@ export default {
   },
   components: {
     Header,
-    Footer,
   },
 };
 </script>

@@ -8,18 +8,17 @@
 }
 
 :root {
-  --blue: #DCEDFF;
-  --light: #94B0DA;
+  --blue: #94B0DA;
+  --light: #DCEDFF;
   --header-link: #94B0DA;
   --header-link-hover: #94B0DA;
-  --header-link-hover-icon: #94B0DA;
-  --header-link-active: rgba(85,85,85,1);
+  --header-link-hover-icon: #DCEDFF;
+  --header-link-active: #525963;
   --std-color: #94B0DA;
   --bg: #1E2126;
-  --bg-rgb: 14,18,18;
   --bgLight: radial-gradient(var(--bg), transparent, var(--blue) 130%);
-  --gray: #8F91A2;
-  --comment: #8F91A2;
+  --gray: #dbdbdb;
+  --comment: #dbdbdb;
 }
 
 html {
@@ -42,7 +41,7 @@ body {
 .wrapper {
   position: relative;
   z-index: 1;
-  // padding-bottom: 20vh;
+  padding-bottom: 20vh;
   min-height: 100vh;
 }
 
@@ -99,7 +98,7 @@ svg {
   }
 
   .-default {
-      background: linear-gradient(to bottom, var(--bg) 3rem, rgba(var(--bg-rgb), 0) 100%);
+      background: linear-gradient(to bottom, var(--bg) 3rem, rgb(var(--bg)) 100%);
       opacity: 1;
   }
 }
@@ -132,8 +131,8 @@ svg {
   }
 }
 .static-container {
-  padding: 25vh 0 0;
-  margin: 0 25vw;
+  padding: 15vh 0 0;
+  margin: 0 24.5vw;
   min-height: 100vh;
   perspective: 900px;
   perspective-origin: 50% 50vh;
@@ -208,14 +207,14 @@ svg {
   b,
   strong { font-weight: 700 }
   a {
-      color: var(--light);
+      color: var(--blue);
       text-decoration: underline;
       transition: all 400ms ease-out;
-      &:hover{ color: var(--blue) }
+      &:hover{ color: var(--light) }
   }
 
   .subtitle{
-      color: var(--blue);
+      color: var(--light);
       font-size: 4rem;
       line-height: 1;
       margin: 4rem -25vw 2rem 0;
@@ -245,7 +244,7 @@ svg {
 
 .title {
   display: block;
-  color: var(--light);
+  color: var(--blue);
   font-size: 4rem;
   font-weight: 700;
   word-spacing: -.1em;
@@ -255,9 +254,9 @@ svg {
   margin-right: -25vw;
   padding-right: 1rem;
 
-  .func { color: var(--blue) }
+  .func { color: var(--light) }
   .params {
-      color: var(--blue);
+      color: var(--light);
       font-weight: 400;
       letter-spacing: -2px;
   }

@@ -60,7 +60,7 @@ const router = new VueRouter({
 const DEFAULT_TITLE = "Some Default Title";
 router.afterEach((to) => {
   Vue.nextTick(() => {
-    document.title = to.meta && to.meta.title || DEFAULT_TITLE;
+    document.title = (to.meta && to.meta.title) || DEFAULT_TITLE;
   });
 });
 

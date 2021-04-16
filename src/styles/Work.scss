@@ -11,18 +11,18 @@
   a{
       display: flex;
       align-items: center;
-      color: var(--light);
+      color: var(--blue);
       text-decoration: none;
 
       img {
           flex: 0 0 auto;
-          width: 16rem;
+          width: 14rem;
+          height: 14rem;
           display: block;
           margin-right: 2rem;
       }
 
       strong {
-          color: var(--purple);
           font-size: 4rem;
           line-height: 1.1;
       }
@@ -50,9 +50,9 @@
   }
 
   a {
-      color: var(--purple);
+      color: var(--blue);
 
-      .nav-ico { stroke: var(--purple) }
+      .nav-ico { stroke: var(--blue) }
   }
 }
 
@@ -65,6 +65,7 @@
       a{
           img {
               width: 8rem;
+              height: 8rem;
               margin-right: 2rem;
           }
 
@@ -86,7 +87,6 @@
           display: block;
 
           img {
-              width: 60%;
               margin: 0 auto 1rem 0;
           }
 

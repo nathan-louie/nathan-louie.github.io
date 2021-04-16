@@ -1,5 +1,7 @@
 <template>
-  <div id="Home" class="wrapper"></div>
+  <div id="home" class="wrapper">
+    <div class="static-container"></div>
+  </div>
 </template>
 
 <script>
