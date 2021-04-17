@@ -32,15 +32,6 @@ const routes = [
     },
   },
   {
-    path: "/resume",
-    name: "Resume",
-    component: () => import("@/views/Resume.vue"),
-    meta: {
-      title: "Resume | Nathan Louie",
-      bodyClass: "page-resume",
-    },
-  },
-  {
     path: "*",
     name: "404",
     component: () => import("@/views/404.vue"),

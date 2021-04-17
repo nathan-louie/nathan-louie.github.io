@@ -37,7 +37,12 @@
             <router-link to="/about" title="About">About</router-link>
           </li>
           <li>
-            <router-link to="/resume" title="Resume">Résumé</router-link>
+            <a
+              href="https://drive.google.com/file/d/1RUGRhcpKZNhUTOCTy7oXzXmRtl2glJN-/view?usp=sharing"
+              target="_blank"
+              title="Resume"
+              >Résumé</a
+            >
           </li>
           <li class="social-link">
             <a

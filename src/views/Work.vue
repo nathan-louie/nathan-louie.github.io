@@ -1,5 +1,5 @@
 <template>
-  <div id="Work" class="wrapper">
+  <div id="work" class="wrapper">
     <div class="static-container">
       <h1 class="title">
         Selected<br v-if="viewport.is568" />
