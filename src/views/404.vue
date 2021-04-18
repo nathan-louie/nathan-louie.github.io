@@ -17,7 +17,6 @@
 </template>
 
 <script>
-import "@/styles/404.scss";
 
 export default {
   name: "404",

@@ -31,9 +31,6 @@
         <ul>
           <li><router-link to="/" title="Home">Home</router-link></li>
           <li>
-            <router-link to="/work" title="Work">Work</router-link>
-          </li>
-          <li>
             <router-link to="/about" title="About">About</router-link>
           </li>
           <li>

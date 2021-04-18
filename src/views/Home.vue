@@ -6,25 +6,41 @@
       </h1>
       <div class="std">
         <subtitle class="-big">
-          I'm a high-school developer making projects I find fun!
+          I'm a high-school developer making projects I find fun!<br /><br />
         </subtitle>
+        <p class="-gray">Selected works</p>
         <ul class="home-list">
           <li>
-            <h2>My ongoing projects:</h2>
+            <router-link to="/fr/" title="Project 1">
+              <img src="@/assets/image1.jpeg" alt="Image" />
+              <div class="details">
+                <strong>Fischer Random chess website ♛</strong><br />
+                <span class="-comment">2021 - Present</span><br />
+                Coming soon!
+              </div>
+            </router-link>
           </li>
           <li>
-            - Fischer Random chess website ♛
+            <router-link to="/ta/" title="Project 2">
+              <img src="@/assets/image2.jpeg" alt="Image" />
+              <div class="details">
+                <strong>Teach Assist mark tracker 🏫</strong><br />
+                <span class="-comment">2020 - 2021</span><br />
+                Coming soon!
+              </div>
+            </router-link>
           </li>
           <li>
-            - Teach Assist mark tracker 🏫
-          </li>
-          <li>
-            - Competitive programming 💻
+            <router-link to="/cp/" title="Project 3">
+              <img src="@/assets/image3.png" alt="Image" />
+              <div class="details">
+                <strong>Competitive programming 💻</strong><br />
+                <span class="-comment">2019 - Present</span><br />
+                Coming soon!
+              </div>
+            </router-link>
           </li>
         </ul>
-        <h2 class="-end">
-          Feel free to look around!
-        </h2>
       </div>
     </div>
   </div>

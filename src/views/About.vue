@@ -9,16 +9,17 @@
         <ul class="about-container">
           <li>
             <a>
-              <img src="@/assets/image0 copy.jpeg" alt="Me :)" />
+              <img src="@/assets/nathanhlouie.png" alt="Me :)" />
               <div class="details">
-                <strong>I'm a high-school student currently developing fun projects.</strong><br /><br />
+                <strong
+                  >I'm a high-school student currently developing fun
+                  projects.</strong
+                ><br /><br />
                 <span class="-comment">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                  molestie nisi vel tincidunt pulvinar. Ut eget augue nec massa
-                  commodo posuere. Vivamus condimentum eros vel arcu auctor,
-                  eget sodales dolor semper. Ut tristique vehicula ullamcorper.
-                  Maecenas sodales purus sed magna consequat, non mattis lorem
-                  cursus.
+                  I love using my development tools to tackle complex
+                  problems whenever I can. When I'm not working on one of my
+                  personal projects, you can find me playing video games,
+                  studying master-level chess games, or creating music.
                 </span>
               </div>
             </a>

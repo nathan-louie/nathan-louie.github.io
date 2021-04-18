@@ -14,15 +14,6 @@ const routes = [
     },
   },
   {
-    path: "/work",
-    name: "Work",
-    component: () => import("@/views/Work.vue"),
-    meta: {
-      title: "Work | Nathan Louie",
-      bodyClass: "page-work",
-    },
-  },
-  {
     path: "/about",
     name: "About",
     component: () => import("@/views/About.vue"),
