@@ -23,6 +23,12 @@ const routes = [
     },
   },
   {
+    path: "/fr",
+    beforeEnter() {
+      window.open("https://gofisch.tech/", "_blank");
+    },
+  },
+  {
     path: "*",
     name: "404",
     component: () => import("@/views/404.vue"),

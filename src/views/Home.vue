@@ -11,7 +11,7 @@
         <p class="-gray">Selected works</p>
         <ul class="home-list">
           <li>
-            <router-link to="/fr/" title="Project 1">
+            <router-link to="/fr" title="Project 1">
               <img src="@/assets/image1.jpeg" alt="Image" />
               <div class="details">
                 <strong>Fischer Random chess website ♛</strong><br />
